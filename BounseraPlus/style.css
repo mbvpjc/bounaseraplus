@@ -1,0 +1,49 @@
+:root {
+    --branco-principal: white;
+    --cinza-secundario: rgba(128, 128, 128, 0.735);
+    --cor-botao: rgb(0, 153, 255);
+    --cor-de-fundo: black;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("imagem/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conteiner__botao {
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.conteiner__imagem { 
+    margin: 1 em 0 2 em 0;
+}
+.conteiner__caixa { 
+    margin: 0 6 em;
+}
